@@ -1,7 +1,6 @@
 import React from "react";
 import {
   FlatList,
-  ImageBackground,
   SafeAreaView,
   TextInput,
   View,
@@ -14,10 +13,6 @@ import styles from "./styles";
 export default function Chat() {
   const renderItem = ({ item }: any) => <Card data={item} />;
   return (
-    <ImageBackground
-      source={require("../../assets/fundo.png")}
-      style={styles.container}
-    >
       <SafeAreaView style={styles.container}>
         <View style={styles.rowSearch}>
           <FontAwesome5 name="search" style={styles.icon} />
@@ -29,6 +24,5 @@ export default function Chat() {
           keyExtractor={(item) => String(item.id)}
         />
       </SafeAreaView>
-    </ImageBackground>
   );
 }

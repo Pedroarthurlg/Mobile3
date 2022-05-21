@@ -6,8 +6,8 @@ export default {
   white: '#ffffff',
   primary: '#455A64',
   primaryLight: '#CFD8DC',
-  secondary: '#7E57C2',
+  secondary: '#61DB83',
   secondaryLight: '#B39DDB',
-  third: '#FFB74D',
-  thirdLight: '#FFE9CA'
+  third: '#6AADBC',
+  thirdLight: '#CCF6FF'
 }

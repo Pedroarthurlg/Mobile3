@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, ImageBackground, Image, TextInput } from "react-native";
+import { View, Text, Image, TextInput } from "react-native";
 import CardSocial from "../../components/CardSocial";
 import { FontAwesome5 } from "@expo/vector-icons";
 import styles from "./styles";
@@ -7,12 +7,9 @@ import Button from "../../components/Button";
 
 export default function Perfil() {
   return (
-    <ImageBackground
-      source={require("../../assets/fundo.png")}
-      style={styles.container}
-    >
-      <Image source={require("../../assets/lazaro.png")} />
-      <Text style={styles.title}>Lázaro Eduardo da Silva</Text>
+    <View style={styles.container}>
+      <Image source={require("../../assets/pedro.png")} />
+      <Text style={styles.title}>Pedro Arthur Luz Guimarães</Text>
       <CardSocial>
         <>
           <FontAwesome5 name="facebook" style={styles.icon} />
@@ -42,6 +39,6 @@ export default function Perfil() {
         onPress={() => console.log("Alterar Senha")}
       />
       <Button title="Sair" type="third" onPress={() => console.log("Sair")} />
-    </ImageBackground>
+    </View>
   );
 }

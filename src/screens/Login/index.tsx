@@ -21,10 +21,6 @@ export default function Login({ navigation }: LoginTypes) {
 
   return (
     <View style={styles.container}>
-      <ImageBackground
-        source={require("../../assets/fundo.png")}
-        style={styles.container}
-      >
         <KeyboardAvoidingView>
           <Text style={styles.title}>Login</Text>
           <View style={styles.formRow}>
@@ -52,7 +48,6 @@ export default function Login({ navigation }: LoginTypes) {
             onPress={handleCadastrar}
           />
         </KeyboardAvoidingView>
-      </ImageBackground>
     </View>
   );
 }
